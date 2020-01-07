@@ -22,8 +22,7 @@ $dbname = 'database_name';
 
 $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die ('Unable to Connect to db');
 
-
-$message = mysqli_real_escape_string($conn, $_POST['message']);
+$message = mysqli_real_escape_string($connect, $_POST['message']);
 $sql = "INSERT INTO messages (post) VALUES ('$message');";
 mysqli_query($connect, $sql);
 
