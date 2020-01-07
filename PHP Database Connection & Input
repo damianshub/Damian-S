@@ -5,10 +5,10 @@
 <body>
 
 <form action=TEST.php method=POST>
-  <table><TR><TD width=600>
-  <textarea name="message" class="form-control" id="exampleFormControl" rows="5"></textarea>
-  <button type="submit" class="btn btn-primary">Message</button>
-  </TD></TR></table>
+<table><TR><TD width=600>
+<textarea name="message" class="form-control" id="exampleFormControl" rows="5" required></textarea>
+<button type="submit" class="btn btn-primary">Message</button>
+</TD></TR></table>
 </form>
 
 <?php
